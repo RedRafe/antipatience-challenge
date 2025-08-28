@@ -70,4 +70,12 @@ string.capital_letter = function(text)
     return (text:gsub('^%l', string.upper))
 end
 
+string.split = function(text, delimiter)
+    local parts = {}
+    for part in string.gmatch(text, delimiter) do
+        table.insert(parts, part)
+    end
+    return parts
+end
+
 return string

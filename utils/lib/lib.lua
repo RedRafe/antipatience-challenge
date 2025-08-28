@@ -27,6 +27,10 @@ tac.print = function(obj)
     end
 end
 
+tac.module_enabled = function(name)
+    return (settings.startup[name] or settings.global[name]).value
+end
+
 -- tac LIBRARY
 --=============================================================================
 
@@ -36,6 +40,7 @@ require 'utils.lib.table'
 
 if data and data.raw and not data.raw.item then
     tac.stage = 'settings'
+    require_lib 'utils.lib.settings'
 elseif data and data.raw then
     tac.stage = 'data'
     require_lib 'utils.lib.data'
