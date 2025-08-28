@@ -1,0 +1,14 @@
+{
+  "name": "antipatience-challenge",
+  "version": "0.2.0",
+  "title": "(the) Antipatience Challenge",
+  "author": "RedRafe",
+  "source": "https://github.com/RedRafe/antipatience-challenge",
+  "homepage": "https://mods.factorio.com/user/RedRafe",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0",
+    "! space-age"
+  ],
+  "description": "Prove yourself in the Antipatience Challenge!"
+}
