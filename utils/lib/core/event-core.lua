@@ -9,7 +9,7 @@
 
 ---@alias EventName defines.events | int
 
-local Token = require 'scripts.core.token'
+local Token = require 'token'
 
 local Public = {}
 

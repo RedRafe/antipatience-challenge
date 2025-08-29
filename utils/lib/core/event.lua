@@ -1,9 +1,9 @@
 --- This Module allows for registering multiple handlers to the same event,
 --- overcoming the limitation of script registering.
 
-local EventCore = require 'scripts.core.event-core'
-local Storage = require 'scripts.core.storage'
-local Token = require 'scripts.core.token'
+local EventCore = require 'event-core'
+local Storage = require 'storage'
+local Token = require 'token'
 
 Storage.subscribe(EventCore.get_handlers(), EventCore.set_handlers)
 

@@ -3,8 +3,8 @@
 -- modified by: RedRafe
 -- ========================================================================= --
 
-local EventCore = require 'scripts.core.event-core'
-local Token = require 'scripts.core.token'
+local EventCore = require 'event-core'
+local Token = require 'token'
 
 local Storage = {}
 

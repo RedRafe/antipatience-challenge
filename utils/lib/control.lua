@@ -4,7 +4,7 @@ local Public = {}
 --=============================================================================
 
 -- Event
-local Event = require 'scripts.core.event'
+local Event = require 'core.event'
 Public.add = Event.add
 Public.remove = Event.remove
 Public.on_init = Event.on_init
@@ -19,18 +19,18 @@ Public.raise_event = Event.raise_event
 Public.register_on_object_destroyed = Event.register_on_object_destroyed
 
 -- Storage
-local Storage = require 'scripts.core.storage'
+local Storage = require 'core.storage'
 Public.subscribe = Storage.subscribe
 Public.subscribe_init = Storage.subscribe_init
 
 -- Task
-local Task = require 'scripts.core.task'
+local Task = require 'core.task'
 Public.queue_task = Task.queue_task
 Public.set_timeout = Task.set_timeout
 Public.set_timeout_in_ticks = Task.set_timeout_in_ticks
 
 -- Token
-local Token = require 'scripts.core.token'
+local Token = require 'core.token'
 Public.register = Token.register
 
 return Public

@@ -5,11 +5,11 @@
 -- modified by: RedRafe
 -- ========================================================================= --
 
-local Event = require 'scripts.core.event'
+local Event = require 'event'
 local PriorityQueue = require 'utils.containers.priority-queue'
 local Queue = require 'utils.containers.queue'
-local Storage = require 'scripts.core.storage'
-local Token = require 'scripts.core.token'
+local Storage = require 'storage'
+local Token = require 'token'
 
 local Task = {}
 
